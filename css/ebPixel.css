@@ -1,0 +1,112 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    color: white;
+    -webkit-font-smoothing: none;
+    text-align: center;
+    font-size: xx-small;
+}
+
+h1 {
+    text-align: center;
+    font-size: x-large;
+}
+
+p {
+    font-size: xx-small;
+}
+
+.game {
+    background-color: #ffffff;
+    display: block;
+    margin: 16px;
+}
+
+.game h3 {
+    color: #d5000f;
+    font-size: medium;
+}
+
+.card .game {
+    columns: 4;
+}
+
+.card.game {
+    text-decoration: none;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #ffffff11;
+    color: white;
+    background-color: black;
+}
+
+.card.game:hover {
+    background-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #333333;
+}
+
+.card.game:active {
+    border-style: solid;
+    border-color: #d5000f;
+    background-color: #400f0fff;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+.card_image {
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.card h5 {
+    color: white;
+    font-size: medium;
+}
+
+.card p {
+    color: white;
+    font-size: xx-small;
+}
+
+
+/* 
+a:active .card.game {
+    background-color: darkred;
+    color: white;
+}
+
+a:hover .card.game {
+    background-color: red;
+}
+
+.card.game h5 {
+    font-size: medium;
+}
+
+.card.game h6 {
+    font-size: x-small;
+}
+
+.card.game p {
+    font-size: xx-small;
+} */
+
+
+/* body { background: #000000; color: rgb(255, 255, 255); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      h1 { text-align: center; } 
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+} */
