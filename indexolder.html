@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Game Development">
+    <meta name="author" content="Rafael Correa">
+
+    <title>Expresso Bits</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="Images/favicon64.png">
+    <link rel="shortcut icon 32" href="Images/favicon32.png">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/ebPixel.css" rel="stylesheet">
+    <link href="css/social.css" rel="stylesheet">
+    <link href="css/ballon.css" rel="stylesheet">
+
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.14.5/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.14.5/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.14.5/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.14.5/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.14.5/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <br><br><br><br><br>
+            <!--img class="img-fluid mb-3 d-block mx-auto col-3 col-md-3" src="img/icon.svg" alt=""-->
+            <h1>
+                <img class="img" src="Images/Logo.png" alt="Expresso Bits">
+                <br>
+                <br>EXPRESSO
+                <br>BITS
+                <br>
+                <br>
+                <p>The bits that express our philosophy</p>
+            </h1>
+
+        </div>
+    </header>
+
+    <section id="social">
+        <div class="container">
+            <br><br>
+            <!-- <h3 style="text-align: center;">
+                <img src="Images/social_icon.png" alt="Control Icon Games">
+            </h3> -->
+
+            <div class="row justify-content-md-center">
+                <a data-balloon-blunt aria-label="GitHub" data-balloon-pos="down" class="social" href="https://github.com/ExpressoBits">
+                    <img class="img_normal" src="Images/github.png" alt="Card image cap">
+                    <img class="img_hover" src="Images/github_hover.png" alt="Card image cap">
+                </a>
+                <a data-balloon-blunt aria-label="Facebook" data-balloon-pos="down" class="social" href="https://www.facebook.com/expressobits/?ref=bookmarks">
+                    <img class="img_normal" src="Images/facebook.png" alt="Card image cap">
+                    <img class="img_hover" src="Images/facebook_hover.png" alt="Card image cap">
+                </a>
+                <a data-balloon-blunt aria-label="Instagram" data-balloon-pos="down" class="social" href="https://www.instagram.com/expressobits/">
+                    <img class="img_normal" src="Images/instagram.png" alt="Card image cap">
+                    <img class="img_hover" src="Images/instagram_hover.png" alt="Card image cap">
+                </a>
+				<!--Working in progress until now there is no link of our youtube channel-->
+                <a data-balloon-blunt aria-label="Youtube WIP" data-balloon-pos="down" class="social">
+                    <img class="img_normal" src="Images/youtube.png" alt="Card image cap">
+                    <img class="img_hover" src="Images/youtube_hover.png" alt="Card image cap">
+                </a>
+                <a data-balloon-blunt aria-label="Itch.io" data-balloon-pos="down" class="social" href="https://expressobits.itch.io/">
+                    <img class="img_normal" src="Images/itchio.png" alt="Card image cap">
+                    <img class="img_hover" src="Images/itchio_hover.png" alt="Card image cap">
+                </a>
+                <a data-balloon-blunt aria-label="Gamejolt" data-balloon-pos="down" class="social" href="https://gamejolt.com/@ExpressoBits">
+                    <img class="img_normal" src="Images/gamejolt.png" alt="Card image cap">
+                    <img class="img_hover" src="Images/gamejolt_hover.png" alt="Card image cap">
+                </a>
+                <a data-balloon-blunt aria-label="Email" data-balloon-pos="down" class="social" href="emailto:expressobits@gmail.com">
+                    <img class="img_normal" src="Images/email.png" alt="Card image cap">
+                    <img class="img_hover" src="Images/email_hover.png" alt="Card image cap">
+				</a>
+				<a data-balloon-blunt aria-label="Discord" data-balloon-pos="down" class="social" href="https://discord.gg/NhDdTdSrsm">
+                    <img class="img_normal" src="Images/discord.png" alt="Card image cap">
+                    <img class="img_hover" src="Images/discord_hover.png" alt="Card image cap">
+                </a>
+            </div>
+    </section>
+
+    <section id="games">
+        <div class="container">
+            <br><br><br><br><br>
+            <h3 style="text-align: center;">
+                <img src="Images/control_icon.png" alt="Control Icon Games">
+            </h3>
+            <div class="row justify-content-md-center">
+
+
+                <div class="card game col-4">
+                    <div class="card-header">
+                        <h5>Sentences Of Frontier</h5>
+                    </div>
+                    <a href="https://gamejolt.com/games/SentencesofFrontier/427365">
+                        <img class="card-img-top card_image col-12" src="https://m.gjcdn.net/game-screenshot/300/2230055-9ucsi7yn-v4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <!--h5 class="card-title">Sentences of Frontier</h5-->
+                            <p class="card-text">Not everything is what it seems.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card game col-4">
+                    <div class="card-header">
+                        <h5>MotherChip</h5>
+                    </div>
+                    <a href="https://gamejolt.com/games/motherchip/339224">
+                        <img class="card-img-top card_image col-12" src="https://m.gjcdn.net/game-screenshot/300/1343110-jymjmvji-v4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <!--h5 class="card-title">Sentences of Frontier</h5-->
+                            <p class="card-text">Challenge yourself to create a complex computer system to defend the processor.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+
+                <div class="card game col-4">
+                    <div class="card-header">
+                        <h5>Infinite Adaptation</h5>
+                    </div>
+                    <a href="https://gamejolt.com/games/infiniteadaptation/390895">
+                        <img class="card-img-top card_image col-12" src="https://m.gjcdn.net/game-header/1300/390895-crop163_371_1366_766-cwayymwk-v4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <!--h5 class="card-title">Sentences of Frontier</h5-->
+                            <p class="card-text">Survive with you cell life!</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card game col-4">
+                    <div class="card-header">
+                        <h5>Untrash</h5>
+                    </div>
+                    <a href="https://gamejolt.com/games/SentencesofFrontier/427365">
+                        <img class="card-img-top card_image col-12" src="https://lh3.googleusercontent.com/Pu7BZi3UcJC9KvPTgqlO6rJ0euCwmLIhjdHjzebP3ZiKzxYC-qwSLnv8JLGh8IklFQ=s180-rw" alt="Card image cap">
+                        <div class="card-body">
+                            <!--h5 class="card-title">Sentences of Frontier</h5-->
+                            <p class="card-text">Clean all dirt to avoid a rain flood to take the city in full.</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+
+
+            </div>
+            <br><br><br><br><br>
+            <h3 style="text-align: center;">
+                <img src="Images/hammer_icon.png" alt="Control Icon Games">
+            </h3>
+            <div class="row justify-content-md-center">
+
+
+                <div class="card game col-4">
+                    <div class="card-header">
+                        <h5>EB Console</h5>
+                    </div>
+                    <a href="https://github.com/ExpressoBits/EBConsole">
+                        <img class="card-img-top card_image col-12" src="https://raw.githubusercontent.com/wiki/ExpressoBits/EBConsole/Demo4.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <!--h5 class="card-title">Sentences of Frontier</h5-->
+                            <p class="card-text">Customizable, Easy, Definitive and Free Console in Game for Unity!</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card game col-4">
+                    <div class="card-header">
+                        <h5>PoolSimply</h5>
+                    </div>
+                    <a href="https://github.com/ExpressoBits/PoolSimply">
+                        <img class="card-img-top card_image col-12" src="https://github.com/ExpressoBits/PoolSimply/blob/develop/Docs/SceneWithPoolSimply.gif?raw=true" alt="Card image cap">
+                        <div class="card-body">
+                            <!--h5 class="card-title">Sentences of Frontier</h5-->
+                            <p class="card-text">Create Simple and Easy Pool of objects!</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card game col-4">
+                    <div class="card-header">
+                        <h5>Localization</h5>
+                    </div>
+                    <a href="https://github.com/ExpressoBits/Localization">
+                        <img class="card-img-top card_image col-12" src="Images/Logo.png" alt="Card image cap">
+                        <div class="card-body">
+                            <!--h5 class="card-title">Sentences of Frontier</h5-->
+                            <p class="card-text">Sentence Translator Tool for Unity</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="card game col-4">
+                    <div class="card-header">
+                        <h5>StrixCartoon</h5>
+                    </div>
+                    <a href="https://github.com/ExpressoBits/StrixCartoon">
+                        <img class="card-img-top card_image col-12" src="https://github.com/ExpressoBits/StrixCartoon/wiki/images/Example.png" alt="Card image cap">
+                        <div class="card-body">
+                            <!--h5 class="card-title">Sentences of Frontier</h5-->
+                            <p class="card-text">Strix Cartoon Shaders!</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+            // // The Firebase SDK is initialized and available here!
+            //
+            // firebase.auth().onAuthStateChanged(user => { });
+            // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+            // firebase.messaging().requestPermission().then(() => { });
+            // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+            //
+            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+            try {
+                let app = firebase.app();
+                let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+                document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+            } catch (e) {
+                console.error(e);
+                document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+            }
+        });
+    </script> -->
+</body>
+
+</html>
