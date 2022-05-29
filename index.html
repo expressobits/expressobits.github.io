@@ -94,20 +94,27 @@
     </section>
 <style>
     .nav-tabs {
+        background
+        background-color: #ffffff;
         background:#ffffff;
         line-height: 300%;
+        float: none;
+        position: absolute;
+        top: 72%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .nav-link:hover{
         font-size: medium;
-        color:rgb(255, 0, 0)
+        color:rgb(255, 0, 0);
     }
     .nav-link{
         font-size: medium;
-        color:rgb(0, 0, 0)
+        color:rgb(0, 0, 0);
     }
     .nav-link:active{
     font-size: medium;
-    color:rgb(255, 0, 0)
+    color:rgb(255, 0, 0);
     }
 </style>
 </head>
@@ -127,11 +134,16 @@
           <a class="nav-item nav-link" id="nav-team-tab" data-toggle="tab" href="#nav-team" role="tab" aria-controls="nav-team" aria-selected="false">TEAM</a>
         </div>
       </nav>
+      <nav>
+        <div class="nav nav-work" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-unt-tab" data-toggle="tab" href="#nav-unt" role="tab" aria-controls="nav-unt" aria-selected="false"></a>
+        </div>
+      </nav>
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <br>
             <br>
-            <h5>We're an independent game development studio.</h5>
+            <h5>We're an independent game development studio</h5>
             <br>
             <h6>since 2011 evolving our pixels.</h6>
         </div>
@@ -263,6 +275,7 @@
             </section>
         </div>
         <div class="tab-pane fade" id="nav-team" role="tabpanel" aria-labelledby="nav-team-tab">
+            <br>
             <br>
             <section id="games">
                 <div class="container">
