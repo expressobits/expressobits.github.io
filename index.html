@@ -1,329 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Game Development">
-    <meta name="author" content="Rafael Correa">
-
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ExpressoBits official website">
+    <meta name="author" content="Gabriel Correa">
+    
     <title>Expresso Bits</title>
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/imgs/favicon64.png">
+    <link rel="shortcut icon 32" href="assets/imgs/favicon32.png">
+    <!-- Font Icons - Beauty -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    
+    <!-- Owl Carousel - Theme -->
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS Styles - Reference -->
+	<link rel="stylesheet" href="assets/css/expresso.css">
 
-    <link rel="shortcut icon" href="Images/favicon64.png">
-    <link rel="shortcut icon 32" href="Images/favicon32.png">
-
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
-    <link href="css/ebPixel.css" rel="stylesheet">
-    <link href="css/social.css" rel="stylesheet">
-    <link href="css/ballon.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-<body>
-
-    <header>
-        <div>
-            <br><br><br><br><br>
-            <!--img class="img-fluid mb-3 d-block mx-auto col-3 col-md-3" src="img/icon.svg" alt=""-->
-            <h1>
-                <img class="img" src="Images/Logo.png" alt="Expresso Bits">
-                <br>
-                <br>EXPRESSO
-                <br>BITS
-                <br>
-                <br>
-                <p>The bits that express our philosophy</p>
-            </h1>
-
-        </div>
-    </header>
-
-    <section id="social">
+    <nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <br><br>
-            <!-- <h3 style="text-align: center;">
-                <img src="Images/social_icon.png" alt="Control Icon Games">
-            </h3> -->
-            <div class="row justify-content-md-center">
-                <a data-balloon-blunt aria-label="GitHub" data-balloon-pos="down" class="social" href="https://github.com/ExpressoBits">
-                    <img class="img_normal" src="Images/github.png" alt="Card image cap">
-                    <img class="img_hover" src="Images/github_hover.png" alt="Card image cap">
-                </a>
-                <a data-balloon-blunt aria-label="Facebook" data-balloon-pos="down" class="social" href="https://www.facebook.com/expressobits/?ref=bookmarks">
-                    <img class="img_normal" src="Images/facebook.png" alt="Card image cap">
-                    <img class="img_hover" src="Images/facebook_hover.png" alt="Card image cap">
-                </a>
-                <a data-balloon-blunt aria-label="Instagram" data-balloon-pos="down" class="social" href="https://www.instagram.com/expressobits/">
-                    <img class="img_normal" src="Images/instagram.png" alt="Card image cap">
-                    <img class="img_hover" src="Images/instagram_hover.png" alt="Card image cap">
-                </a>
-				<!--Working in progress until now there is no link of our youtube channel-->
-                <a data-balloon-blunt aria-label="Youtube WIP" data-balloon-pos="down" class="social">
-                    <img class="img_normal" src="Images/youtube.png" alt="Card image cap">
-                    <img class="img_hover" src="Images/youtube_hover.png" alt="Card image cap">
-                </a>
-                <a data-balloon-blunt aria-label="Itch.io" data-balloon-pos="down" class="social" href="https://expressobits.itch.io/">
-                    <img class="img_normal" src="Images/itchio.png" alt="Card image cap">
-                    <img class="img_hover" src="Images/itchio_hover.png" alt="Card image cap">
-                </a>
-                <a data-balloon-blunt aria-label="Gamejolt" data-balloon-pos="down" class="social" href="https://gamejolt.com/@ExpressoBits">
-                    <img class="img_normal" src="Images/gamejolt.png" alt="Card image cap">
-                    <img class="img_hover" src="Images/gamejolt_hover.png" alt="Card image cap">
-                </a>
-                <a data-balloon-blunt aria-label="Email" data-balloon-pos="down" class="social" href="emailto:expressobits@gmail.com">
-                    <img class="img_normal" src="Images/email.png" alt="Card image cap">
-                    <img class="img_hover" src="Images/email_hover.png" alt="Card image cap">
-				</a>
-				<a data-balloon-blunt aria-label="Discord" data-balloon-pos="down" class="social" href="https://discord.gg/NhDdTdSrsm">
-                    <img class="img_normal" src="Images/discord.png" alt="Card image cap">
-                    <img class="img_hover" src="Images/discord_hover.png" alt="Card image cap">
-                </a>
+            <a class="navbar-brand" href="#"><img src="assets/imgs/logo.png" alt="" class="brand-img"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="infos container mb-4 mb-md-2">
+                    <div class="title">
+                        <h1 class="nav-title" href="#home">Expresso Bits</h1>
+                    </div>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <!-- Dev 04/10/2022
+                    <li class="nav-item">
+                        <a class="nav-link" href="#devlogs">DevLogs</a>
+                    </li>
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-    </section>
-<style>
-    .nav-tabs {
-        line-height: 300%;
-        display: inline-flex;
-    }
-    .nav-link:hover{
-        font-size: medium;
-        color:rgb(255, 0, 0);
-    }
-    .nav-link{
-        font-size: medium;
-        color:rgb(255, 255, 255);
-        background-color: #000000;
-        background: #000000;
-    }
-    .nav-link:active{
-    font-size: medium;
-    color:rgb(255, 0, 0);
-    }
-    .nav{
-        background-repeat: repeat-x;
-    }
-    .nav-div{
-        line-height: 300%;
-        background-repeat: repeat-x;
-        background-color: rgb(255, 255, 255);
-        color: #ffffff;
-    }
-    .nav-split{
-        font-size: medium;
-        color:rgb(255, 255, 255);
-        background-color: #ffffff;
-        background: #ffffff;
-    }
-    </style>
-</head>
-<body>
-    <a>
-        <div>
-            <br>
-            <br>
-            <br>
-            <br>
         </div>
-    </a>
-    <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">HOME</a>
-          <a class="nav-item nav-link" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab" aria-controls="nav-projects" aria-selected="false">PROJECTS</a>
-          <a class="nav-item nav-link" id="nav-team-tab" data-toggle="tab" href="#nav-team" role="tab" aria-controls="nav-team" aria-selected="false">TEAM</a>
-        </div>
-      </nav>
-      <nav>
-        <div class="nav nav-div" id="nav-tab" role="tablist">
-            <a class="nav-item nav-split">this is an easter egg</a>
-            </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <br>
-            <br>
-            <h6>We're an independent game development studio</h6>
-            <br>
-            <br>
-            <p>Expresso Bits is a Brazilian independent video game development company based in Santa Maria, Rio Grande do Sul.</p>
-            <p>It was founded in 2010 and incorporated on June 12, 2011 by Rafael Correa.</p>
-        </div>
-        <div class="tab-pane fade" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
-            <br>
-            <section id="games">
-                <div class="container">
-                    <h3 style="text-align: center;">
-                        <img src="Images/control_icon.png" alt="Control Icon Games">
-                    </h3>
-                    <h6>Games</h6>
-                    <div class="row justify-content-md-center">
-                        <div class="card game col-4">
-                            <div class="card-header">
-                                <h5>Sentences Of Frontier</h5>
-                            </div>
-                            <a href="https://gamejolt.com/games/SentencesofFrontier/427365">
-                                <img class="card-img-top card_image col-12" src="https://m.gjcdn.net/game-screenshot/300/2230055-9ucsi7yn-v4.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <!--h5 class="card-title">Sentences of Frontier</h5-->
-                                    <p class="card-text">Not everything is what it seems.</p>
-                                </div>
-                            </a>
+    </nav>
+
+
+    <header id="home" class="header">
+        <div class="overlay"></div>
+
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">  
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="carousel-title">We're an independent<br> game development studio.</h1>
                         </div>
-                    <div class="card game col-4">
-                        <div class="card-header">
-                            <h5>MotherChip</h5>
-                        </div>
-                        <a href="https://gamejolt.com/games/motherchip/339224">
-                            <img class="card-img-top card_image col-12" src="https://m.gjcdn.net/game-screenshot/300/1343110-jymjmvji-v4.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <!--h5 class="card-title">Sentences of Frontier</h5-->
-                                <p class="card-text">Challenge yourself to create a complex computer system to defend the processor.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row justify-content-md-center">
-            
-                    <div class="card game col-4">
-                        <div class="card-header">
-                            <h5>Infinite Adaptation</h5>
-                        </div>
-                        <a href="https://gamejolt.com/games/infiniteadaptation/390895">
-                            <img class="card-img-top card_image col-12" src="https://m.gjcdn.net/game-header/1300/390895-crop163_371_1366_766-cwayymwk-v4.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <!--h5 class="card-title">Sentences of Frontier</h5-->
-                                <p class="card-text">Survive with you cell life!</p>
-                            </div>
-                        </a>
-                    </div>
-            
-                    <div class="card game col-4">
-                        <div class="card-header">
-                            <h5>Untrash</h5>
-                        </div>
-                        <a href="https://gamejolt.com/games/SentencesofFrontier/427365">
-                            <img class="card-img-top card_image col-12" src="https://lh3.googleusercontent.com/Pu7BZi3UcJC9KvPTgqlO6rJ0euCwmLIhjdHjzebP3ZiKzxYC-qwSLnv8JLGh8IklFQ=s180-rw" alt="Card image cap">
-                            <div class="card-body">
-                                <!--h5 class="card-title">Sentences of Frontier</h5-->
-                                <p class="card-text">Clean all dirt to avoid a rain flood to take the city in full.</p>
-                            </div>
-                        </a>
-                    </div>   
-                </div>
-                <br>
-                <br>
-                <h3 style="text-align: center;">
-                    <img src="Images/hammer_icon.png" alt="Control Icon Games">
-                </h3>
-                <h6>Tools</h6>
-                    <div class="row justify-content-md-center">
-        
-        
-                        <div class="card game col-4">
-                            <div class="card-header">
-                                <h5>EB Console</h5>
-                            </div>
-                            <a href="https://github.com/ExpressoBits/EBConsole">
-                                <img class="card-img-top card_image col-12" src="https://raw.githubusercontent.com/wiki/ExpressoBits/EBConsole/Demo4.gif" alt="Card image cap">
-                                <div class="card-body">
-                                 <!--h5 class="card-title">Sentences of Frontier</h5-->
-                                    <p class="card-text">Customizable, Easy, Definitive and Free Console in Game for Unity!</p>
-                                </div>
-                            </a>
-                        </div>
-        
-                     <div class="card game col-4">
-                            <div class="card-header">
-                                <h5>PoolSimply</h5>
-                            </div>
-                            <a href="https://github.com/ExpressoBits/PoolSimply">
-                                <img class="card-img-top card_image col-12" src="https://github.com/ExpressoBits/Pools/blob/master/Editor/Textures/Pool.png?raw=true" alt="Card image cap">
-                                <div class="card-body">
-                                    <!--h5 class="card-title">Sentences of Frontier</h5-->
-                                    <p class="card-text">Create Simple and Easy Pool of objects!</p>
-                                </div>
-                            </a>
-                        </div>
-        
-                        <div class="card game col-4">
-                            <div class="card-header">
-                                <h5>Localization</h5>
-                            </div>
-                            <a href="https://github.com/ExpressoBits/Localization">
-                                <img class="card-img-top card_image col-12" src="Images/Logo.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <!--h5 class="card-title">Sentences of Frontier</h5-->
-                                    <p class="card-text">Sentence Translator Tool for Unity</p>
-                                </div>
-                            </a>
-                        </div>
-        
-        
-                        <div class="card game col-4">
-                            <div class="card-header">
-                                <h5>StrixCartoon</h5>
-                            </div>
-                            <a href="https://github.com/ExpressoBits/StrixCartoon">
-                            <img class="card-img-top card_image col-12" src="https://github.com/ExpressoBits/StrixCartoon/wiki/images/Example.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <!--h5 class="card-title">Sentences of Frontier</h5-->
-                                    <p class="card-text">Strix Cartoon Shaders!</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="tab-pane fade" id="nav-team" role="tabpanel" aria-labelledby="nav-team-tab">
-            <br>
-            <br>
-            <section id="games">
-                <div class="container">
-                    <h3 style="text-align: center;">
-                    </h3>
-                    <h6>Expresso Bits Family</h6>
-                    <div class="row justify-content-md-center">
-                        <div class="card game col-4">
-                            <div class="card-header">
-                                <h3>ScriptsEngineer</h2>
-                                <h5>Rafael Correa</h5>
-                            </div>
-                            <a href="https://github.com/ScriptsEngineer">
-                                <img class="card-img-top card_image col-12" src="https://avatars.githubusercontent.com/u/1673249?v=4" alt="Card image cap">
-                                <div class="card-body">
-                                    <!--h5 class="card-title">Programmer</h5-->
-                                    <p class="card-text">Programmer</p>
-                                </div>
-                            </a>
-                        </div>
-                    <div class="card game col-4">
-                        <div class="card-header">
-                            <h3>GMC</h2>
-                            <h5>Gabriel Correa</h5>
-                        </div>
-                        <a href="https://github.com/GMCfromhell">
-                            <img class="card-img-top card_image col-12" src="https://avatars.githubusercontent.com/u/51033848?v=4" alt="Card image cap">
-                            <div class="card-body">
-                                <!--h5 class="card-title">Game Designer</h5-->
-                                <p class="card-text">Game Designer</p>
-                            </div>
-                        </a>
                     </div>
                 </div>
             </div>        
-    </div>
-    </div>
+        </div>
+
+        <div class="infos container mb-4 mb-md-2">
+            <div class="title">
+                <h5>Expresso Bits</h5>
+                <p class="font-small">The bits that express our philosophy</p>
+                <p class="font-small">Founded in 2010 and incorporated on June 12, 2011 by Rafael Correa.</p>
+            </div>
+            <div class="socials text-right">
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <a class="d-block subtitle"><i class="ti-email pr-2"></i>expressobits@gmail.com</a>
+                    </div>
+                    <div class="col">
+                        <h6 class="subtitle font-weight-normal mb-2">Social Media</h6>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/expressobits/?ref=bookmarks" class="link pr-1"><i class="ti-facebook"></i></a>
+                            <a href="https://github.com/ExpressoBits" class="link pr-1"><i class="ti-github"></i></a>
+                            <a href="https://expressobits.itch.io/" class="link pr-1"><i class="ti-game"></i></a>
+                            <a href="https://gamejolt.com/@ExpressoBits" class="link pr-1"><i class="ti-bolt"></i></a>
+                            <a href="https://discord.gg/NhDdTdSrsm" class="link pr-1"><i class="ti-headphone-alt"></i></a>
+                            <a href="https://www.instagram.com/expressobits/" class="link pr-1"><i class="ti-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" id="about">
+
+        <div class="container">
+
+            <div class="row align-items-center mr-auto">
+                <div class="col-md-4">
+                    <h6 class="xs-font mb-0">The company and what we do</h6>
+                    <h3 class="section-title">About Us</h3>
+                    <p>We're an independent game development studio</p>
+                    <p>Expresso Bits is a Brazilian independent video game development company based in Santa Maria, Rio Grande do Sul.
+                    It was founded in 2010 and incorporated on June 12, 2011 by Rafael Correa.</p>
+                    <p>Focused on Low style Graphics and a High Experience gameplay.</p>
+
+                    <a href="#team">Find more about us</a>
+                </div>
+                <div class="col-sm-6 col-md-4 ml-auto">
+                    <div class="widget">
+                        <div class="icon-wrapper">
+                            <i class="ti-calendar"></i>
+                        </div>
+                        <div class="infos-wrapper">
+                            <h4 class="text-primary">10+</h4>
+                            <p>Years of Lifetime</p>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="icon-wrapper">
+                            <i class="ti-face-smile"></i>
+                        </div>
+                        <div class="infos-wrapper">
+                            <h4 class="text-primary">15,000+</h4>
+                            <p>Downloads</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="widget">
+                        <div class="icon-wrapper">
+                            <i class="ti-star"></i>
+                        </div>
+                        <div class="infos-wrapper">
+                            <h4 class="text-primary">20</h4>
+                            <p>Projects Worked On</p>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="icon-wrapper">
+                            <i class="ti-user"></i>
+                        </div>
+                        <div class="infos-wrapper">
+                            <h4 class="text-primary">3</h4>
+                            <p>Team Members</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+    <section class="section" id="projects">
+        <div class="container">
+            <h6 class="xs-font mb-0">Our own Projects Created</h6>
+            <h3 class="section-title pb-4">Projects</h3>
+        </div>
+
+        <div id="owl-portfolio" class="owl-carousel owl-theme mt-4">
+            <a href="https://gamejolt.com/games/SentencesofFrontier/427365" class="item expertises-item">
+                <img src="assets/imgs/Projects/sentencesoffrontier.png"alt="Loading" class="box-shadow">
+                <h6 class="mt-3 mb-2">Sentences Of Frontier</h6>
+                <p class="xs-font">Not everything is what it seems.</p>
+            </a> 
+            <a href="https://gamejolt.com/games/motherchip/339224" class="item expertises-item">
+                <img src="assets/imgs/Projects/motherchip.png"alt="Loading" class="box-shadow">
+                <h6 class="mt-3 mb-2">MotherChip</h6>
+                <p class="xs-font">Challenge yourself to create a complex computer system to defend the processor.</p>
+            </a> 
+            <a href="https://gamejolt.com/games/infiniteadaptation/390895" class="item expertises-item">
+                <img src="assets/imgs/Projects/infiniteadaptation.png"alt="Loading" class="box-shadow">
+                <h6 class="mt-3 mb-2">Infinite Adaptation</h6>
+                <p class="xs-font">Survive with you cell life!</p>
+            </a> 
+            <a href="https://gamejolt.com/games/untrash/414635" class="item expertises-item">
+                <img src="assets/imgs/Projects/untrash.png"alt="Loading" class="box-shadow">
+                <h6 class="mt-3 mb-2">Untrash</h6>
+                <p class="xs-font">Clean all dirt to avoid a rain flood to take the city in full.</p>
+            </a> 
+            <a href="https://github.com/ExpressoBits/EBConsole" class="item expertises-item">
+                <img src="assets/imgs/Projects/ebconsole.png"alt="Loading" class="box-shadow">
+                <h6 class="mt-3 mb-2">Tool - EB Console</h6>
+                <p class="xs-font">Customizable, Easy, Definitive and Free Console in Game for Unity!</p>
+            </a> 
+            <a href="https://github.com/ExpressoBits/Pools" class="item expertises-item">
+                <img src="assets/imgs/Projects/PoolSimply.png"alt="Loading" class="box-shadow">
+                <h6 class="mt-3 mb-2">Tool - PoolSimply</h6>
+                <p class="xs-font">Create Simple and Easy Pool of objects!</p>
+            </a> 
+            <a href="https://github.com/ExpressoBits/Localization" class="item expertises-item">
+                <img src="assets/imgs/Projects/localization.png"alt="Loading" class="box-shadow">
+                <h6 class="mt-3 mb-2">Tool - Localization</h6>
+                <p class="xs-font">Sentence Translator Tool for Unity</p>
+            </a>
+            <a href="https://github.com/ExpressoBits/StrixCartoon" class="item expertises-item">
+                <img src="assets/imgs/Projects/strixcartoon.png"alt="Loading" class="box-shadow">
+                <h6 class="mt-3 mb-2">Tool - StrixCartoon</h6>
+                <p class="xs-font">Strix Cartoon Shaders!</p>
+            </a>            
+        </div>
+    </section>
+
+
+    <section class="section" id="team">
+        <div class="container">
+            <h6 class="xs-font mb-0">Meet the Team members.</h6>
+            <h3 class="section-title">Team</h3>
+
+            <div id="owl-testmonial" class="owl-carousel owl-theme mt-4">
+                <div class="item">
+                    <div class="textmonial-item">
+                        <img src="assets/imgs/Avatars/avatar1.png" class="avatar" alt="Loading">
+                        <div class="des">
+                            <h5 class="font-weight-bold"></h5>
+                            <p>I'm a game developer! Unity Expert and C# Coder.</p>
+                            <p>Currently working on new game on Godot and improving my knowledge in Godot.</p>
+                            <h5 class="text-right font-weight-bold"></h5>
+
+                            <div class="line"></div>
+                            <p>Rafael Correa</p><h6 class="name">ScriptsEngineer</h6>
+                            <h6 class="xs-font">Programmer & Engineering</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="textmonial-item">
+                        <img src="assets/imgs/Avatars/avatar2.png" class="avatar" alt="Loading">
+                        <div class="des">
+                            <h5 class="font-weight-bold"></h5>
+                            <p>I'm a game designer and developer, always making pixels alive.</p>
+                            <p>Currently improving my knowledge in Godot.</p>
+                            <h5 class="text-right font-weight-bold"></h5>
+
+                            <div class="line"></div>
+                            <p>Gabriel Correa</p><h6 class="name">GMC</h6>
+                            <h6 class="xs-font">Graphic Designer & Creative Developer</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="textmonial-item">
+                        <img src="assets/imgs/Avatars/avatar3.png" class="avatar" alt="Loading">
+                        <div class="des">
+                            <h5 class="font-weight-bold"></h5>
+                            <p>I'm a graphics and sound designer, keeping my mind out of the box for a shine note.</p>
+                            <p>Currently improving my knowledge in Music.</p>
+                            <h5 class="text-right font-weight-bold"></h5>
+
+                            <div class="line"></div>
+                            <p>Enya Brass</p><h6 class="name">Charymore</h6>
+                            <h6 class="xs-font">Graphics & Sound Design</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-overlay">
+
+        <div class="container">
+            <div class="infos mb-4 mb-md-2">
+                <div class="title">
+                    <h5>Expresso Bits</h5>
+                    <p class="font-small">The bits that express our philosophy</p>
+                    <p class="font-small">Founded in 2010 and incorporated on June 12, 2011 by Rafael Correa.</p>
+                </div>
+                <div class="socials text-right">
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <a class="d-block subtitle"><i class="ti-email pr-2"></i>expressobits@gmail.com</a>
+                        </div>
+                    <div class="col">
+                        <h6 class="subtitle font-weight-normal mb-1">Social Media</h6>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/expressobits/?ref=bookmarks" class="link pr-1"><i class="ti-facebook"></i></a>
+                            <a href="https://github.com/ExpressoBits" class="link pr-1"><i class="ti-github"></i></a>
+                            <a href="https://expressobits.itch.io/" class="link pr-1"><i class="ti-game"></i></a>
+                            <a href="https://gamejolt.com/@ExpressoBits" class="link pr-1"><i class="ti-bolt"></i></a>
+                            <a href="https://discord.gg/NhDdTdSrsm" class="link pr-1"><i class="ti-headphone-alt"></i></a>
+                            <a href="https://www.instagram.com/expressobits/" class="link pr-1"><i class="ti-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        </div>
+    </section>
+<!-- Dev 04/10/2022
+    <section class="section" id="devlogs">
+
+        <div class="container mb-3">
+            <h6 class="xs-font mb-0">Culpa perferendis excepturi.</h6>
+            <h3 class="section-title mb-5">Our Blog</h3>
+
+            <div class="blog-wrapper">
+                <div class="img-wrapper">
+                    <img src="assets/imgs/img-3.jpg" alt="Loading">
+                    <div class="date-container">
+                        <h6 class="day">29</h6>
+                        <h6 class="mun">Jun</h6> 
+                    </div>
+                </div>
+                <div class="txt-wrapper">
+                    <h4 class="blog-title">Lorem ipsum dolor.</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae ducimus dolor sed numquam, assumenda non dolorem in facilis eius alias voluptates, fugit maiores aspernatur ad rem saepe molestiae consequuntur. adipisicing elit. Repellat nam placeat laboriosam dolorum aperiam fuga voluptate, quis ea vel ab sunt incidunt quasi, molestias atque deserunt voluptates quae voluptatum sit.</p>
+
+                    <a href="#" class="badge badge-info">Graphic Design</a>
+
+                    <h6 class="blog-footer">
+                        <a href="javascript:void(0)"><i class="ti-user"></i> Admin </a> |
+                        <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 213 </a> |
+                        <a href="javascript:void(0)"><i class="ti-comments"></i> 123</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <section id="contact" class="section pb-0">
+
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-4 d-none d-md-block order-1">
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6>CONTACT INFO</h6>
+                        </li>
+                        <li class="list-body">
+                            <p class="py-2">Business Contact</p>
+                            <p class="py-2"><i class="ti-location-pin"></i> Santa Maria, RS - Brazil</p>
+                            <p class="py-2"><i class="ti-email"></i>  expressobits@gmail.com</p>
+
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+
+            <footer class="footer mt-5 border-top">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6 text-center text-md-left">
+                        <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a target="_blank">Gabriel Correa</a></p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/expressobits/?ref=bookmarks" class="link pr-1"><i class="ti-facebook"></i></a>
+                            <a href="https://github.com/ExpressoBits" class="link pr-1"><i class="ti-github"></i></a>
+                            <a href="https://expressobits.itch.io/" class="link pr-1"><i class="ti-game"></i></a>
+                            <a href="https://gamejolt.com/@ExpressoBits" class="link pr-1"><i class="ti-bolt"></i></a>
+                            <a href="https://discord.gg/NhDdTdSrsm" class="link pr-1"><i class="ti-headphone-alt"></i></a>
+                            <a href="https://www.instagram.com/expressobits/" class="link pr-1"><i class="ti-instagram"></i></a>
+                        </div>
+                    </div>
+                </div> 
+            </footer>
+        </div>
+    </section>
+	
+	<!-- Core - Scripts  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- Bootstrap 3 affix - Scripts -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    
+    <!-- Owl C0arousel - Scripts  -->
+    <script src="assets/vendors/owl-carousel/js/owl.carousel.js"></script>
+
+
+    <!-- JS File import - Scripts -->
+    <script src="assets/js/expresso.js"></script>
 </body>
 </html>
