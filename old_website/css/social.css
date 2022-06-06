@@ -1,0 +1,31 @@
+.social {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    width: 102px;
+    height: 102px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #ffffff00;
+}
+
+.social img {
+    display: block;
+    margin: 16px;
+}
+
+.social:hover .img_normal {
+    display: none
+}
+
+.social .img_normal {
+    display: block
+}
+
+.social:hover .img_hover {
+    display: block
+}
+
+.social .img_hover {
+    display: none
+}
