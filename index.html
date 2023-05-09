@@ -232,34 +232,47 @@
   </footer>
 
   <script>
-    document.addEventListener("DOMContentLoaded", async function() {
-      const yearElement = document.getElementById("current-year");
-      const currentYear = new Date().getFullYear();
-      yearElement.textContent = currentYear;
-  
-      const starsCountSpan = document.getElementById('starsCount');
-      const games = document.querySelectorAll('.game');
-  
-      games.forEach(async (game) => {
-        const repoLink = game.querySelector('a');
-        const repo = repoLink.href;
-        const starsCount = game.querySelector('.starsCount');
-  
-        try {
-          const response = await fetch(`https://api.github.com/repos/${repo}`);
-          const data = await response.json();
-          const stargazersCount = data.stargazers_count;
-          if (Number.isInteger(stargazersCount)) {
-            starsCount.textContent = `${stargazersCount} stars`;
-          } else {
-            starsCount.textContent = 'Star us';
-          }
-        } catch (error) {
-          console.error(error);
+document.addEventListener("DOMContentLoaded", async function() {
+  const yearElement = document.getElementById("current-year");
+  const currentYear = new Date().getFullYear();
+  yearElement.textContent = currentYear;
+
+  const starsCountSpan = document.getElementById('starsCount');
+  const games = document.querySelectorAll('.game');
+
+  games.forEach(async (game) => {
+    const repoLink = game.querySelector('a');
+    const repo = repoLink.href;
+    const starsCount = game.querySelector('.starsCount');
+
+    const cachedData = localStorage.getItem(repo);
+    if (cachedData) {
+      // Se os dados estiverem em cache, exiba-os
+      const stargazersCount = JSON.parse(cachedData).stargazers_count;
+      if (Number.isInteger(stargazersCount)) {
+        starsCount.textContent = `${stargazersCount} stars`;
+      } else {
+        starsCount.textContent = 'Star us';
+      }
+    } else {
+      try {
+        const response = await fetch(`https://api.github.com/repos/${repo}`);
+        const data = await response.json();
+        const stargazersCount = data.stargazers_count;
+        if (Number.isInteger(stargazersCount)) {
+          starsCount.textContent = `${stargazersCount} stars`;
+          // Armazene os dados em cache para uso posterior
+          localStorage.setItem(repo, JSON.stringify(data));
+        } else {
           starsCount.textContent = 'Star us';
         }
-      });
-    });
+      } catch (error) {
+        console.error(error);
+        starsCount.textContent = 'Star us';
+      }
+    }
+  });
+});
   </script>
 
 </body>
