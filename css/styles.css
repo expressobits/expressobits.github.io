@@ -79,7 +79,7 @@ body {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 header {
@@ -140,7 +140,26 @@ section {
   background-position: center;
 }
 
+.metadata {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
 
+.stars {
+  display: flex;
+  align-items: center;
+  color: gold;
+  margin-right: 5px;
+}
+
+.stars svg {
+  fill: gold;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  margin-bottom: 3px;
+}
 
 
 .game:hover {
@@ -215,23 +234,23 @@ footer p {
 
 /* SOCIAL */
 #social {
-  padding: 20px;
+  padding: 0px;
 }
 
 .social {
   text-decoration: none;
   color: white;
-  width: 102px;
-  height: 102px;
+  width: 16px;
+  height: 16px;
   border-width: 3px;
   border-style: solid;
   border-color: #ffffff00;
-  margin: 10px;
+  margin: 0px 5px;
 }
 
 .social img {
   display: block;
-  margin: 16px;
+  margin: 0px;
 }
 
 .social:hover .img_normal {

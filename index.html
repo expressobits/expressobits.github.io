@@ -9,29 +9,6 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const yearElement = document.getElementById("current-year");
-    const currentYear = new Date().getFullYear();
-    yearElement.textContent = currentYear;
-
-    // const controlIcon = document.getElementById("control-icon");
-    // const hammerIcon = document.getElementById("hammer-icon");
-    // const controlSection = document.getElementById("control-section");
-    // const hammerSection = document.getElementById("hammer-section");
-
-    // controlIcon.addEventListener("click", function() {
-    //   controlSection.style.display = "block";
-    //   hammerSection.style.display = "none";
-    // });
-
-    // hammerIcon.addEventListener("click", function() {
-    //   controlSection.style.display = "none";
-    //   hammerSection.style.display = "block";
-    // });
-  });
-</script>
-
 <body>
   <header>
     <!-- Sendo implementado -->
@@ -52,9 +29,10 @@
             <p>The bits that express our philosophy</p>
         </div>
   </section>
+
   <section id="social">
-    <div class="container">
-        <br><br>
+    <div class="container clearfix">
+        <br><br />
         <div class="d-flex justify-content-center">
             <a data-balloon-blunt aria-label="GitHub" data-balloon-pos="down" class="social" href="https://github.com/ExpressoBits">
                 <img class="img_normal" src="Images/github.png" alt="Card image cap">
@@ -90,6 +68,7 @@
               </a>
           </div>
       </div>
+      <br>
     </section>
     
     <section>
@@ -103,18 +82,18 @@
   
         <div id="control-section" class="game-list">
           <div class="game">
-            <span class="gameortool-icon"></span>
-            <h1 class="bodytext">Sentences Of Frontier</h3>
+            <h1 class="bodytext">Sentences Of Frontier</h1>
             <a href="https://gamejolt.com/games/SentencesofFrontier/427365">
-                <img class="game-img" src="https://m.gjcdn.net/game-screenshot/300/2230055-9ucsi7yn-v4.jpg">
-                <div>
-                    <p>Not everything is what it seems.</p>
-                </div>
+              <img class="game-img" src="https://m.gjcdn.net/game-screenshot/300/2230055-9ucsi7yn-v4.jpg">
+              <div>
+                <p>Not everything is what it seems.</p>
+              </div>
             </a>
           </div>
+          
   
           <div class="game">
-            <h1 class="bodytext">MotherChip</h3>
+            <h1 class="bodytext">MotherChip</h1>
           <a href="https://gamejolt.com/games/motherchip/339224">
             <img class="game-img" src="https://m.gjcdn.net/game-screenshot/300/1343110-jymjmvji-v4.jpg">
             <div>
@@ -124,7 +103,7 @@
       </div>
 
       <div class="game">
-        <h1 class="bodytext">Infinite Adaptation</h3>
+        <h1 class="bodytext">Infinite Adaptation</h1>
         <a href="https://gamejolt.com/games/infiniteadaptation/390895">
             <img class="game-img" src="https://m.gjcdn.net/game-thumbnail/200/390895-enrpdhyb-v4.webp">
             <div>
@@ -134,7 +113,7 @@
       </div>
 
       <div class="game">
-        <h1 class="bodytext">Untrash</h3>
+        <h1 class="bodytext">Untrash</h1>
         <a href="">
             <img class="game-img" src="https://lh3.googleusercontent.com/Pu7BZi3UcJC9KvPTgqlO6rJ0euCwmLIhjdHjzebP3ZiKzxYC-qwSLnv8JLGh8IklFQ=s180-rw">
             <div>
@@ -151,48 +130,113 @@
       <h3 style="text-align: center;">
         <img src="Images/hammer_icon.png" alt="Control Icon Games">
       </h3>
+      <div id="control-section" class="game-list">
+      <div class="game">
+        <h1 class="bodytext">EB Console</h1>
+        <a href="https://github.com/ExpressoBits/EBConsole" data-repo="ExpressoBits/EBConsole">
+          <img class="game-img" src="https://raw.githubusercontent.com/wiki/ExpressoBits/EBConsole/Demo4.gif">
+          <div>
+            <p>Customizable, Easy, Definitive and Free Console in Game for Unity!</p>
+            <br>
+          </div>
+        </a>
+        <div class="metadata">
+          <span class="stars">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star-fill starred-button-icon d-inline-block mr-2">
+              <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path>
+            </svg>
+            <span class="starsCount">Loading...</span>
+          </span>
+        </div>
+      </div>
+  
+      <div class="game">
+        <h1 class="bodytext">PoolSimply</h1>
+        <a href="https://github.com/ExpressoBits/PoolSimply" data-repo="ExpressoBits/PoolSimply">
+          <img class="game-img" src="https://raw.githubusercontent.com/wiki/ExpressoBits/EBPools/Images/Pool.png">
+          <div>
+            <p>Create Simple and Easy Pool of objects!</p>
+            <br>
+            <br>
+            <br>
+          </div>
+        </a>
+        <div class="metadata">
+          <span class="stars">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star-fill starred-button-icon d-inline-block mr-2">
+              <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path>
+            </svg>
+            <span class="starsCount">Loading...</span>
+          </span>
+        </div>
+      </div>
+      
 
-      <div class="game-list">
-        <div class="game">
-          <span class="gameortool-icon"></span>
-          <h1 class="bodytext">EB Console</h3>
-          <a href="https://github.com/ExpressoBits/EBConsole">
-              <img class="game-img" src="https://raw.githubusercontent.com/wiki/ExpressoBits/EBConsole/Demo4.gif">
-              <div>
-                  <p>Customizable, Easy, Definitive and Free Console in Game for Unity!</p>
-              </div>
-          </a>
+      <div class="game">
+        <h1 class="bodytext">StrixCartoon</h1>
+        <a href="https://github.com/ExpressoBits/StrixCartoon" data-repo="ExpressoBits/StrixCartoon">
+          <img class="game-img" src="https://github.com/ExpressoBits/StrixCartoon/wiki/images/Example.png">
+          <div>
+            <p>Strix Cartoon Shaders!</p>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+        </a>
+        <div class="metadata">
+          <span class="stars">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star-fill starred-button-icon d-inline-block mr-2">
+              <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path>
+            </svg>
+            <span class="starsCount">Loading...</span>
+          </span>
         </div>
-  
-        <div class="game">
-          <h1 class="bodytext">PoolSimply</h3>
-          <a href="https://github.com/ExpressoBits/PoolSimply">
-              <img class="game-img" src="https://raw.githubusercontent.com/wiki/ExpressoBits/EBPools/Images/Pool.png">
-              <div>
-                  <p>Create Simple and Easy Pool of objects!</p>
-              </div>
-          </a>
+      </div>
+
+      <div class="game">
+        <h1 class="bodytext">Character Controller</h1>
+        <a href="https://github.com/expressobits/character-controller" data-repo="expressobits/character-controller">
+          <img class="game-img" src="https://raw.githubusercontent.com/wiki/ExpressoBits/character-controller/UML.png">
+          <div>
+            <p>Modular Character Controller for Godot 4!</p>
+            <br>
+            <br>
+            <br>
+          </div>
+        </a>
+        <div class="metadata">
+          <span class="stars">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star-fill starred-button-icon d-inline-block mr-2">
+              <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path>
+            </svg>
+            <span class="starsCount">Loading...</span>
+          </span>
         </div>
-  
-        <div class="game">
-          <h1 class="bodytext">Localization</h3>
-          <a href="https://github.com/ExpressoBits/Localization">
-              <img class="game-img" src="Images/Logo.png">
-              <div>
-                  <p>Sentence Translator Tool for Unity</p>
-              </div>
-          </a>
+      </div>
+
+      <div class="game">
+        <h1 class="bodytext">Inventory System</h1>
+        <a href="https://github.com/expressobits/inventory-system" data-repo="expressobits/inventory-system">
+          <img class="game-img" src="https://raw.githubusercontent.com/wiki/ExpressoBits/inventory-system/demo.gif">
+          <div>
+            <p>Modular inventory system for Godot 4 with nodes!</p>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+        </a>
+        <div class="metadata">
+          <span class="stars">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star-fill starred-button-icon d-inline-block mr-2">
+              <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path>
+            </svg>
+            <span class="starsCount">Loading...</span>
+          </span>
         </div>
-  
-        <div class="game">
-          <h1 class="bodytext">StrixCartoon</h3>
-          <a href="https://github.com/ExpressoBits/StrixCartoon">
-              <img class="game-img" src="https://github.com/ExpressoBits/StrixCartoon/wiki/images/Example.png">
-              <div>
-                  <p>Strix Cartoon Shaders!</p>
-              </div>
-          </a>
-        </div>
+      </div>
+
       </div>
       </section>    
   </section>
@@ -200,5 +244,37 @@
   <footer>
     <p>All rights reserved &copy; <span id="current-year"></span></p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", async function() {
+      const yearElement = document.getElementById("current-year");
+      const currentYear = new Date().getFullYear();
+      yearElement.textContent = currentYear;
+  
+      const starsCountSpan = document.getElementById('starsCount');
+      const games = document.querySelectorAll('.game');
+  
+      games.forEach(async (game) => {
+        const repoLink = game.querySelector('a');
+        const repo = repoLink.href;
+        const starsCount = game.querySelector('.starsCount');
+  
+        try {
+          const response = await fetch(`https://api.github.com/repos/${repo}`);
+          const data = await response.json();
+          const stargazersCount = data.stargazers_count;
+          if (Number.isInteger(stargazersCount)) {
+            starsCount.textContent = `${stargazersCount} stars`;
+          } else {
+            starsCount.textContent = 'Star us';
+          }
+        } catch (error) {
+          console.error(error);
+          starsCount.textContent = 'Star us';
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
