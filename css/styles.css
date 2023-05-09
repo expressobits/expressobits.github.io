@@ -65,6 +65,14 @@ body {
   font-size: 12px;
 }
 
+.bodytooltext {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
 .sectiontittle {
   color: white;
   -webkit-font-smoothing: none;
@@ -142,8 +150,8 @@ section {
 
 .metadata {
   display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
+  justify-content: center;
+  margin-top: 0px;
 }
 
 .stars {
