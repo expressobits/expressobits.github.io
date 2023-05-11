@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Expresso Bits</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="Images/favicon64.png">   
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
@@ -232,7 +234,7 @@
   </footer>
 
   <script>
-document.addEventListener("DOMContentLoaded", async function() {
+  document.addEventListener("DOMContentLoaded", async function() {
   const yearElement = document.getElementById("current-year");
   const currentYear = new Date().getFullYear();
   yearElement.textContent = currentYear;
@@ -242,12 +244,12 @@ document.addEventListener("DOMContentLoaded", async function() {
 
   games.forEach(async (game) => {
     const repoLink = game.querySelector('a');
+
     const repo = repoLink.href;
     const starsCount = game.querySelector('.starsCount');
 
     const cachedData = localStorage.getItem(repo);
     if (cachedData) {
-      // Se os dados estiverem em cache, exiba-os
       const stargazersCount = JSON.parse(cachedData).stargazers_count;
       if (Number.isInteger(stargazersCount)) {
         starsCount.textContent = `${stargazersCount} stars`;
@@ -261,7 +263,6 @@ document.addEventListener("DOMContentLoaded", async function() {
         const stargazersCount = data.stargazers_count;
         if (Number.isInteger(stargazersCount)) {
           starsCount.textContent = `${stargazersCount} stars`;
-          // Armazene os dados em cache para uso posterior
           localStorage.setItem(repo, JSON.stringify(data));
         } else {
           starsCount.textContent = 'Star us';
@@ -272,7 +273,7 @@ document.addEventListener("DOMContentLoaded", async function() {
       }
     }
   });
-});
+  });
   </script>
 
 </body>
