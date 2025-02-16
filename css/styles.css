@@ -118,6 +118,213 @@ section {
   flex-grow: 1;
 }
 
+/* CARROUSEL TO CARDS*/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #222;
+}
+
+#cCarousel-games {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+#cCarousel-games .arrow {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 1;
+  font-size: 26px;
+  color: white;
+  background: #76767672;
+  cursor: pointer;
+}
+
+#cCarousel-games #prev {
+  left: 0px;
+}
+
+#cCarousel-games #next {
+  right: 0px;
+}
+
+#carousel-vp {
+  width: 770px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+@media (max-width: 770px) {
+  #carousel-vp {
+    width: 510px;
+  }
+}
+
+@media (max-width: 510px) {
+  #carousel-vp {
+    width: 250px;
+  }
+}
+
+#cCarousel-games #cCarousel-games-inner {
+  display: flex;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+  gap: 10px;
+  left: 0px;
+}
+
+.cCarousel-games-item {
+  width: 250px;
+  height: 365px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(45deg, #1a1a1a, #333333);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.cCarousel-games-item:hover {
+  border: 2px solid white;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cCarousel-games-item img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 246px;
+  color: rgb(0, 0, 0);
+}
+
+.cCarousel-games-item .infos {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.cCarousel-games-item .infos button {
+  background: #222;
+  padding: 10px 30px;
+  border-radius: 15px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#cCarousel-features {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+#cCarousel-features .arrow {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 1;
+  font-size: 26px;
+  color: white;
+  background: #76767672;
+  cursor: pointer;
+}
+
+#cCarousel-features #prev {
+  left: 0px;
+}
+
+#cCarousel-features #next {
+  right: 0px;
+}
+
+#cCarousel-features #cCarousel-features-inner {
+  display: flex;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+  gap: 10px;
+  left: 0px;
+}
+
+.cCarousel-features-item {
+  width: 250px;
+  height: 365px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(45deg, #1a1a1a, #333333);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.cCarousel-features-item:hover {
+  border: 2px solid white;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cCarousel-features-item img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 246px;
+  color: rgb(0, 0, 0);
+}
+
+.cCarousel-features-item .infos {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.cCarousel-features-item .infos button {
+  background: #222;
+  padding: 10px 30px;
+  border-radius: 15px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 /* GAME CARDS */
 .game-list {
   display: flex;
