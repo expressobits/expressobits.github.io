@@ -230,15 +230,21 @@
   </footer>
 
   <script>
-    document.addEventListener("DOMContentLoaded", async function() {
+  document.addEventListener("DOMContentLoaded", async function() {
     const yearElement = document.getElementById("current-year");
     const currentYear = new Date().getFullYear();
     yearElement.textContent = currentYear;
-    
-    document.querySelectorAll("[id^=cCarousel-]").forEach((carousel) => {
-      const inner = carousel.querySelector("[id$='-inner']");
-      const prev = carousel.querySelector(".arrow#prev");
-      const next = carousel.querySelector(".arrow#next");
+
+    function setupCarousel(carouselId, innerId, prevId, nextId) {
+      const carousel = document.getElementById(carouselId);
+      const inner = document.getElementById(innerId);
+      const prev = document.getElementById(prevId);
+      const next = document.getElementById(nextId);
+
+      if (!carousel || !inner || !prev || !next) {
+        console.warn(`Elementos do carrossel ${carouselId} não encontrados.`);
+        return;
+      }
 
       let leftValue = 0;
 
@@ -263,7 +269,10 @@
           inner.style.transform = `translateX(${leftValue}px)`;
         }
       });
-    });
+    }
+    
+    setupCarousel("cCarousel-games", "cCarousel-games-inner", "prevGames", "nextGames");
+    setupCarousel("cCarousel-features", "cCarousel-features-inner", "prevFeatures", "nextFeatures");
   });
   </script>
 </body>
