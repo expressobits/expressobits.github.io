@@ -11,7 +11,7 @@ hide:
 
     ---
 
-    <img src="https://raw.githubusercontent.com/wiki/ExpressoBits/inventory-system/demo.gif" alt="steam multiplayer peer" width=100% object-fit=cover min-height= 246px/>
+    <img src="https://raw.githubusercontent.com/wiki/ExpressoBits/inventory-system/demo.gif" alt="inventory system" width=100% object-fit=cover min-height= 246px/>
 
     Modular inventory system for Godot 4 with nodes!
 
