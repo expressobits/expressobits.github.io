@@ -1,0 +1,115 @@
+site_name: Expresso Bits
+site_url: https://expressobits.com
+# plugins:
+#   - search
+copyright: Copyright &copy; 2014 - actual Expresso Bits
+theme:
+  name: material
+  custom_dir: overrides
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - header.autohide
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.footer
+    # - navigation.sections
+    # - navigation.expand
+    # - navigation.path
+    # - navigation.prune
+    - navigation.indexes
+    # - toc.follow
+    - toc.integrate
+    - navigation.top
+    # - search.suggest
+    # - search.highlight
+    # - search.share
+  font:
+    text: Pixelify Sans
+    code: Red Hat Mono
+  logo: assets/logo2x.png
+  favicon: assets/favicon64.png
+  palette: 
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Dark mode
+      primary: black
+      accent: red
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/lightbulb
+        name: Light mode
+      primary: red
+      accent: pink
+
+extra:
+  generator: false
+  social:
+      - icon: fontawesome/brands/github 
+        link: https://github.com/expressobits
+      - icon: fontawesome/brands/facebook 
+        link: https://www.facebook.com/expressobits/?ref=bookmarks
+      - icon: fontawesome/brands/instagram 
+        link: https://www.instagram.com/expressobits/
+      - icon: fontawesome/brands/youtube 
+        link: https://www.youtube.com/@expressobits6136
+      - icon: fontawesome/brands/itch-io 
+        link: https://expressobits.itch.io/
+      # - icon: fontawesome/brands/gamejolt 
+      #   link: https://gamejolt.com/@ExpressoBits
+      - icon: fontawesome/brands/discord
+        link: https://discord.gg/NhDdTdSrsm
+        name: Discord
+      - icon: material/email
+        link: https://gamejolt.com/emailto:expressobits@gmail.com
+  # analytics:
+  #   provider: google
+  #   property: G-TBJYX8K1T0
+  #   feedback:
+  #     title: Was this page helpful?
+  #     ratings:
+  #       - icon: material/emoticon-happy-outline
+  #         name: This page was helpful
+  #         data: 1
+  #         note: >-
+  #           Thanks for your feedback!
+  #       - icon: material/emoticon-sad-outline
+  #         name: This page could be improved
+  #         data: 0
+  #         note: >- 
+  #           Thanks for your feedback! Help us improve this page by
+  #           using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+  # consent:
+  #   title: Cookie consent
+  #   description: >- 
+  #     We use cookies to recognize your repeated visits and preferences, as well
+  #     as to measure the effectiveness of our documentation and whether users
+  #     find what they're searching for. With your consent, you're helping us to
+  #     make our documentation better.
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      #combine_header_slug: true
+  - admonition
+  - pymdownx.details
+      
