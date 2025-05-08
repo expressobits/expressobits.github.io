@@ -33,7 +33,7 @@ I'm trying to see if I can give some attention to plugins this week, especially 
 To do this, I also want to move the editor codes to C++, motivated after having seen the editor codes for [LimboAI](https://github.com/limbonaut/limboai), a plugin for Godot in C++ that creates state trees, very incredible by the way, I will certainly use it to create the AI ​​behaviors of the zombies.
 
 <figure markdown="span">
-  ![Image title](https://github.com/limbonaut/limboai/blob/master/doc/images/demo_charger.gif)
+  ![Image title](https://raw.githubusercontent.com/limbonaut/limboai/refs/heads/master/doc/images/limboai_editor.png)
   <figcaption>Images of limbo AI plugin for godot</figcaption>
 </figure>
 
