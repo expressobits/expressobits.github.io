@@ -4,9 +4,6 @@ hide:
   - navigation
   - toc
 ---
-
-## Who are we?
-
 ### Developer
 - Rafael Correa
 
