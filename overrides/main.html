@@ -1,19 +1,4 @@
 {% extends "base.html" %}
-<!-- {% block extrahead %}
-  <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.7c86dd97.min.css' | url }}">
-{% endblock %} -->
-{% block announce %}
-<section>
-  <div class="container text-center mt-12 mb-12">
-  <div class="container text-center mt-5 mb-5">
-      <img class="img mt-5 mb-5" src="assets/logo.png" alt="Expresso Bits ">
-      <h1 class="tittle">EXPRESSO <span class="break-line">BITS</span></h1>
-      <p>The bits that express our philosophy</p>
-  </div>
-  </div>
-</section>
-{% endblock %}
-{% block scripts %}
-  {{ super() }}
-  <script src="{{ 'assets/javascripts/custom.9e5da760.min.js' | url }}"></script>
+{% block content %}
+    {% include "partials/mycontent.html" %}
 {% endblock %}

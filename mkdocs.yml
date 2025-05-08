@@ -3,11 +3,11 @@ site_url: https://expressobits.com
 # plugins:
 #   - search
 copyright: Copyright &copy; 2014 - actual Expresso Bits
+site_description: >-
+  Game studio located in southern Brazil, currently developing Nevoa
 theme:
   name: material
   custom_dir: overrides
-  icon:
-    repo: fontawesome/brands/github
   features:
     - header.autohide
     - navigation.instant
@@ -30,8 +30,8 @@ theme:
   font:
     text: Pixelify Sans
     code: Red Hat Mono
-  logo: assets/logo2x.png
-  favicon: assets/favicon64.png
+  logo: assets/images/logo2x.png
+  favicon: assets/icons/favicon64.png
   palette: 
     # Dark Mode
     - media: "(prefers-color-scheme: dark)"
@@ -96,6 +96,7 @@ extra:
   #     make our documentation better.
 
 markdown_extensions:
+  - md_in_html
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
