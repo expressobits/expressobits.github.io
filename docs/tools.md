@@ -1,5 +1,5 @@
 ---
-icon: material/cloud
+icon: fontawesome/solid/screwdriver-wrench
 hide:
   - navigation
   - toc

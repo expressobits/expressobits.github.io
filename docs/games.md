@@ -1,5 +1,5 @@
 ---
-icon: material/cloud
+icon: fontawesome/solid/gamepad
 hide:
   - navigation
   - toc
