@@ -1,8 +1,10 @@
 site_name: Expresso Bits
 site_url: https://expressobits.com
 plugins:
-  # - search
-  - blog
+  - search
+  - blog:
+      blog_toc: true
+      post_excerpt_separator: <!-- more -->
 copyright: Copyright &copy; 2014 - actual Expresso Bits
 site_description: >-
   Game studio located in southern Brazil, currently developing Nevoa
@@ -17,16 +19,16 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.footer
-    # - navigation.sections
-    # - navigation.expand
-    # - navigation.path
-    # - navigation.prune
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
     - navigation.indexes
-    # - toc.follow
+    - toc.follow
     - toc.integrate
     - navigation.top
-    # - search.suggest
-    # - search.highlight
+    - search.suggest
+    - search.highlight
     # - search.share
   font:
     text: Pixelify Sans
