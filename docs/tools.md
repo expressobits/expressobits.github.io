@@ -7,7 +7,7 @@ hide:
 <div class="grid cards" markdown >
 
 
--   :fontawesome-brands-github:{ .lg .middle }  __Inventory System__
+-   :simple-godotengine:{ .lg .middle } :fontawesome-brands-github:{ .lg .middle } :simple-cplusplus:{ .lg .middle } __Inventory System__
 
     ---
 
@@ -18,7 +18,7 @@ hide:
     [:fontawesome-brands-github: See more](https://github.com/expressobits/inventory-system)
 
 
--   :fontawesome-brands-steam:{ .lg .middle }  __Steam Multiplayer Peer__
+-   :simple-godotengine:{ .lg .middle } :fontawesome-brands-steam:{ .lg .middle } :fontawesome-brands-github:{ .lg .middle } :simple-cplusplus:{ .lg .middle } __Steam Multiplayer Peer__
 
     ---
 
@@ -29,7 +29,7 @@ hide:
     [:octicons-arrow-right-24: See more](ttps://github.com/expressobits/steam-multiplayer-peer)
 
 
--   :fontawesome-brands-github:{ .lg .middle } __Character Controller__
+-   :simple-godotengine:{ .lg .middle } :fontawesome-brands-github:{ .lg .middle } __Character Controller__
 
     ---
 
@@ -40,7 +40,7 @@ hide:
 
 
 
--   :fontawesome-brands-unity:{ .lg .middle } __EB Console__
+-   :fontawesome-brands-unity:{ .lg .middle } :fontawesome-brands-github:{ .lg .middle } :simple-sharp:{ .lg .middle } __EB Console__
 
     ---
     <img src="../../assets/images/helper.png" alt="nevoa-game" width=100% object-fit=cover min-height= 246px/>
@@ -49,7 +49,7 @@ hide:
     [:octicons-arrow-right-24: See more](https://github.com/ExpressoBits/EBConsole)
 
 
--   :fontawesome-brands-unity:{ .lg .middle } __StrixCartoon__
+-   :fontawesome-brands-unity:{ .lg .middle } :fontawesome-brands-github:{ .lg .middle } :simple-sharp:{ .lg .middle } __StrixCartoon__
 
     ---
 
@@ -59,7 +59,7 @@ hide:
     [:octicons-arrow-right-24: See more](https://github.com/ExpressoBits/StrixCartoon)
 
 
--   :fontawesome-brands-unity:{ .lg .middle } __PoolSimply__
+-   :fontawesome-brands-unity:{ .lg .middle } :fontawesome-brands-github:{ .lg .middle } :simple-sharp:{ .lg .middle } __PoolSimply__
 
     ---
 

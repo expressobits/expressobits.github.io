@@ -116,4 +116,12 @@ markdown_extensions:
       #combine_header_slug: true
   - admonition
   - pymdownx.details
-      
+  
+
+nav:
+  - Home: index.md
+  - Games: games.md
+  - Tools: tools.md
+  - About: about.md
+  - Blog:
+    - blog/index.md

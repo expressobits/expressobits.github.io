@@ -6,7 +6,7 @@ hide:
 ---
 <div class="grid cards" markdown >
 
--   :material-cloud:{ .lg .middle } __Nevoa__
+-   :simple-steam:{ .lg .middle } :simple-godotengine:{ .lg .middle } __Nevoa__
 
     ---
     <img src="../../assets/images/nevoa-game.jpg" alt="nevoa-game" width=100% object-fit=cover min-height= 246px/>
@@ -14,7 +14,7 @@ hide:
 
     [:octicons-arrow-right-24: See more](#)
 
--   :material-door:{ .lg .middle } __Sentences Of Frontier__
+-   :simple-gamejolt:{ .lg .middle } :simple-unity:{ .lg .middle } __Sentences Of Frontier__
 
     ---
 
@@ -24,7 +24,7 @@ hide:
 
     [:octicons-arrow-right-24: See more](#)
 
--   :material-notebook:{ .lg .middle } __Motherchip__
+-   :simple-android:{ .lg .middle } :fontawesome-brands-java:{ .lg .middle } __Motherchip__
 
     ---
 
@@ -34,7 +34,7 @@ hide:
     [:octicons-arrow-right-24: See more](#)
 
 
--   :material-dna:{ .lg .middle } __Infinite Adaptation__
+-   :simple-gamejolt:{ .lg .middle } :material-unity:{ .lg .middle } __Infinite Adaptation__
 
     ---
 
@@ -43,7 +43,7 @@ hide:
 
     [:octicons-arrow-right-24: See more](#)
 
--   :material-dna:{ .lg .middle } __Untrash__
+-   :material-android:{ .lg .middle } :material-unity:{ .lg .middle } __Untrash__
 
     ---
 
