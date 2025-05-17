@@ -16,6 +16,8 @@ Having an interesting building system is something that complements any survival
 
 Still very simple, the building system can be seen in the video below:
 
+<!-- more -->
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z5fa4WDFxew?si=LYscU92EcU7RTr51" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 I created a blueprint item that shows the player the current building, where they can open a menu and modify the current building:
