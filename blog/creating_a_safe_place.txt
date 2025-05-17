@@ -1,0 +1,11 @@
+Criando um lugar seguro
+
+Sistemas de construção é algo que sempre queria ter dentro nevoa, embora alguns jogos que usei de referência, como the long dark, não tenham sistemas de construção,
+Ter um sistema interessante de construção é algo que complementa qualquer survival.
+
+Ainda muito simples, o sistema de construção pode ser visto no vídeo abaixo:
+
+
+Ele é baseado em plugs parecido com que o Rust e Unturned fazem, porém quero que esse sistema não fique apenas para construções que o jogador cria, 
+mas para todas construções já existentes no mundo que o jogador vai encontrar/explorar, parecido com que acontece com Project Zomboid, que no caso se encontrar uma lanchonete posso simplesmente desmontar ou melhorar ela transformando na minha nova base do apocalipse zumbi. Tenho um desafio técnico grande pois o project zomboid deve usar ctodos objetos de construção
+como um objeto apenas, como faz o minecraft com chunks, isso é feito para otimizar tanto o processamento gráfico como a comunicação em rede.
