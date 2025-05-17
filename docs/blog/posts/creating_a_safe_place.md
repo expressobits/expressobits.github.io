@@ -3,10 +3,10 @@ authors:
   - scriptsengineer
 categories:
   - Nevoa
-date: 2024-05-08
+date: 2024-05-17
 pin: false
 draft: false
-slug: first-post
+slug: creating-a-safe-place
 ---
 
 # Creating a safe place
